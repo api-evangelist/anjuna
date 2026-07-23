@@ -1,0 +1,49 @@
+generated: '2026-07-17'
+method: searched
+source: https://docs.anjuna.io/latest/nitro/latest/getting_started/command_reference.html
+summary: >-
+  Anjuna ships command-line tooling (not a REST API) to build, run, and operate
+  confidential-computing enclaves across AWS Nitro, AMD SEV, and Intel SGX. The
+  binaries package an application into an attestable enclave image and manage its
+  lifecycle, secrets, encryption, and logging. There is no public HTTP API surface.
+docs: https://docs.anjuna.io/latest/nitro/latest/getting_started/command_reference.html
+binaries:
+  - name: anjuna-nitro-cli
+    platform: aws-nitro
+    description: Primary CLI to build and run Anjuna Nitro enclaves.
+    subcommands:
+      - build-enclave
+      - run-enclave
+      - describe-enclaves
+      - describe-eif
+      - console
+      - terminate-enclave
+  - name: anjuna-nitro-encrypt
+    platform: aws-nitro
+    description: Encrypt files/secrets for use inside a Nitro enclave.
+  - name: anjuna-nitro-decrypt
+    platform: aws-nitro
+    description: Decrypt files/secrets provisioned to a Nitro enclave.
+  - name: anjuna-nitro-kms-policy
+    platform: aws-nitro
+    description: Generate/manage AWS KMS key policies bound to enclave attestation.
+  - name: anjuna-nitro-netd-parent
+    platform: aws-nitro
+    description: Networking daemon running on the parent instance for enclave traffic.
+  - name: anjuna-fs-proxy
+    platform: aws-nitro
+    description: Filesystem proxy providing enclave access to host storage.
+  - name: anjuna-log-receiver
+    platform: aws-nitro
+    description: Receives and forwards logs emitted from within the enclave.
+  - name: anjuna-metrics-proxy
+    platform: aws-nitro
+    description: Proxies metrics out of the enclave.
+  - name: anjuna-block-manager.sh
+    platform: aws-nitro
+    description: Manages block/persistent storage devices for the enclave.
+references:
+  - platform: amd-sev
+    command_reference: https://docs.anjuna.io/latest/sev/latest/overview_and_prerequisites/command_reference/index.html
+  - platform: aws-nitro
+    command_reference: https://docs.anjuna.io/latest/nitro/latest/getting_started/command_reference.html

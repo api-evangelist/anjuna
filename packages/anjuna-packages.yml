@@ -1,0 +1,12 @@
+generated: '2026-07-17'
+method: searched
+source: https://github.com/anjuna-security
+packages:
+  - language: go
+    registry: pkg.go.dev
+    name: github.com/anjuna-security/go-nitro-attestation
+    url: https://pkg.go.dev/github.com/anjuna-security/go-nitro-attestation
+    repo: https://github.com/anjuna-security/go-nitro-attestation
+    install: go get github.com/anjuna-security/go-nitro-attestation
+    description: Go library to help verify and work with AWS Nitro Enclaves attestation documents.
+    official: true

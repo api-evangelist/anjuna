@@ -1,8 +1,26 @@
 aid: anjuna
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/anjuna.png
 name: Anjuna
-description: Anjuna is a company surfaced as a portfolio company of dcvc, insight-partners, kindred-ventures,
-  playground-global and added to the API Evangelist network as a stub for enrichment. This profile is
-  a lead awaiting the enrichment pipeline.
+description: >-
+  Anjuna Security provides a confidential-computing platform that lets organizations
+  run existing applications inside hardware-based secure enclaves (Trusted Execution
+  Environments) across AWS Nitro, AMD SEV, and Intel SGX without code changes, keeping
+  data encrypted at rest, in transit, and in use. Its Seaglass platform, Policy Manager,
+  Overwatch agentic-AI governance, and Northstar AI data clean room deliver hardware-rooted
+  cryptographic attestation and policy-based access control for sensitive workloads and
+  privacy-preserving AI. Anjuna is delivered as command-line runtime tooling and open-source
+  attestation libraries rather than a public HTTP API.
 url: https://raw.githubusercontent.com/api-evangelist/anjuna/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -18,6 +36,13 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Confidential Computing
+- Security
+- Cloud
+- Encryption
+- Trusted Execution Environment
+- Attestation
+- AI Governance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -27,3 +52,32 @@ maintainers:
 common:
 - type: Website
   url: https://www.anjuna.io/
+- type: DeveloperPortal
+  url: https://docs.anjuna.io/
+- type: Documentation
+  url: https://docs.anjuna.io/
+- type: GettingStarted
+  url: https://docs.anjuna.io/latest/nitro/latest/getting_started/first_steps.html
+- type: Blog
+  url: https://www.anjuna.io/blog
+- type: Support
+  url: https://support.anjuna.io/
+- type: GitHubOrganization
+  url: https://github.com/anjuna-security
+- type: ChangeLog
+  url: https://docs.anjuna.io/latest/release-notes/index.html
+- type: CLI
+  url: cli/anjuna-cli.yml
+- type: Packages
+  url: packages/anjuna-packages.yml
+- type: LLMsTxt
+  url: llms/anjuna-llms.txt
+- type: WellKnown
+  url: well-known/anjuna-well-known.yml
+- type: DomainSecurity
+  url: security/anjuna-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

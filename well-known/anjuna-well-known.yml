@@ -1,0 +1,33 @@
+generated: '2026-07-17'
+method: searched
+source: live probe of /.well-known/ on Anjuna hosts
+note: >-
+  No /.well-known/ discovery documents are published on the marketing or docs
+  hosts. Anjuna ships confidential-computing runtime tooling, not a public HTTP
+  API, so OIDC/OAuth/api-catalog discovery surfaces are not expected. Empty is a
+  valid, recorded result.
+hosts:
+  - host: https://www.anjuna.io
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://docs.anjuna.io
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
