@@ -16,8 +16,14 @@ deployment:
 tools_count: 2
 tools:
 - name: search_docs
-  description: ''
+  description: 'Search the public Anjuna docs index.  Args:     query: Plain-text search string (same
+    idea as the site''s search box)—keywords, commands, or short         phrases. No boolean or field-specific
+    query language is exposed; refine with ``build``'
 - name: get_doc_page
-  description: ''
+  description: Return one public documentation page as plain text (from a search_docs hit).  Use the **site-relative**
+    ``url`` field returned by ``search_docs`` (starts with ``/latest/``). This is equivalent to reading
+    the ``anjuna://docs/html/...`` resou
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
