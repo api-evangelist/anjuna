@@ -16,13 +16,28 @@ deployment:
 tools_count: 2
 tools:
 - name: search_docs
-  description: 'Search the public Anjuna docs index.  Args:     query: Plain-text search string (same
-    idea as the site''s search box)—keywords, commands, or short         phrases. No boolean or field-specific
-    query language is exposed; refine with ``build``'
+  description: "Search the public Anjuna docs index.\n\nArgs:\n    query: Plain-text search string (same\
+    \ idea as the site's search box)—keywords, commands, or short\n        phrases. No boolean or field-specific\
+    \ query language is exposed; refine with ``build``,\n        ``version``, ``limit``, and alternate\
+    \ wording if needed.\n    limit: Maximum number of hits (1–50). Omit or 0 for the server default.\n\
+    \    build: Product filter: nitro, sev, k8s-sev, sgx, or apm. On most deployments this is\n      \
+    \  **required**: if you omit it, the response has ``build_required`` and ``build_options`` instead\n\
+    \        of ``hits`` so you can retry with the right product. (Some servers are configured to allow\n\
+    \        unscoped search without ``build``.)\n    version: Optional doc version (e.g. v1.56). If empty,\
+    \ and ``build`` is set,\n        the server resolves the current published version from the on-disk\
+    \ tech stub\n        (same as /latest/{build}/) and filters to that version. If the stub is unavailable,\n\
+    \        only tier and optional product filters apply.\n\nReturns:\n    JSON string. On success: ok,\
+    \ hits (snippets + url + url_absolute + resource_uri for read_resource),\n    fetch_urls, estimatedTotalHits,\
+    \ optional applied_version_filter. Use read_resource(resource_uri) for full\n    page text when needed.\
+    \ If ``build`` was required but empty: build_required, build_options, empty hits.\n    Or error."
 - name: get_doc_page
-  description: Return one public documentation page as plain text (from a search_docs hit).  Use the **site-relative**
-    ``url`` field returned by ``search_docs`` (starts with ``/latest/``). This is equivalent to reading
-    the ``anjuna://docs/html/...`` resou
+  description: "Return one public documentation page as plain text (from a search_docs hit).\n\nUse the\
+    \ **site-relative** ``url`` field returned by ``search_docs`` (starts with ``/latest/``).\nThis is\
+    \ equivalent to reading the ``anjuna://docs/html/...`` resource but works in clients that\nonly list\
+    \ tools. Origin follows the same rules as ``url_absolute`` in search (request Host when allowed,\n\
+    else env / default).\n\nArgs:\n    url: Site-relative path, e.g. ``/latest/nitro/v1.56/getting_started/foo.html``.\n\
+    \nReturns:\n    JSON string: ``ok``, ``url``, ``url_absolute``, and ``text`` on success; or ``ok:\
+    \ false`` and ``error``."
 tools_source: live tools/list via initialize handshake, 2026-09-12 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
 descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
