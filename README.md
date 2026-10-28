@@ -64,6 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Anjuna is a company surfaced as a portfolio company of dcvc, insight-partners, kindred-ventures, playground-global and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Anjuna Security provides a confidential-computing platform that lets organizations run existing applications inside hardware-based secure enclaves (Trusted Execution Environments) across AWS Nitro, AMD SEV, and Intel SGX without code changes, keeping data encrypted at rest, in transit, and in use. Its Seaglass platform, Policy Manager, Overwatch agentic-AI governance, and Northstar AI data clean room deliver hardware-rooted cryptographic attestation and policy-based access control for sensitive workloads and privacy-preserving AI. Anjuna is delivered as command-line runtime tooling and open-source attestation libraries rather than a public HTTP API.
 
-Backed by: dcvc, insight-partners, kindred-ventures, playground-global — https://www.anjuna.io/
+**Areas:** Company · Confidential Computing · Security · Cloud · Encryption · Trusted Execution Environment · Attestation · AI Governance
+
+## Anjuna on APIs.io
+
+Everything profiled for Anjuna is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/anjuna/](https://apis.io/providers/anjuna/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [anjuna](https://apis.io/servers/anjuna/anjuna/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Anjuna Domain Security](https://apis.io/security/anjuna/anjuna-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.anjuna.io/)
+- [Documentation](https://docs.anjuna.io/)
+- [Getting started](https://docs.anjuna.io/latest/nitro/latest/getting_started/first_steps.html)
+- [Support](https://support.anjuna.io/)
+- [Changelog](https://docs.anjuna.io/latest/release-notes/index.html)
+- [Blog](https://www.anjuna.io/blog)
+- [GitHub](https://github.com/anjuna-security)
+
+## API Evangelist rating
+
+**Kin Score 15.9** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 58.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 45.2 |
+| Access clarity | 0.0 |
+
+**Agent readiness 8.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/anjuna/](https://apis.io/providers/anjuna/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Anjuna: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/anjuna/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
